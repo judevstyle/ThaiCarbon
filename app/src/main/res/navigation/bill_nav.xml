@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/bill_nav"
+    app:startDestination="@id/billFragment">
+
+    <fragment
+        android:id="@+id/billFragment"
+        android:name="com.taitos.testpjk.view.bill.BillFragment"
+        android:label="BillFragment" >
+        <action
+            android:id="@+id/action_billFragment_to_billDescFragment"
+            app:destination="@id/billDescFragment" />
+        <action
+            android:id="@+id/action_billFragment_to_billDescTFragment"
+            app:destination="@id/billDescTFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/billDescFragment"
+        android:name="com.taitos.testpjk.view.billDesc.BillDescFragment"
+        android:label="fragment_bill_desc"
+        tools:layout="@layout/fragment_bill_desc" />
+    <fragment
+        android:id="@+id/billDescTFragment"
+        android:name="com.taitos.testpjk.view.billDesc.BillDescTFragment"
+        android:label="BillDescTFragment" />
+</navigation>

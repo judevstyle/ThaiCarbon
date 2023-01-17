@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "955320276982",
+    "project_id": "tcg-billing",
+    "storage_bucket": "tcg-billing.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:955320276982:android:a3310c2c5c4bdfb7ded9d7",
+        "android_client_info": {
+          "package_name": "com.ssoft.thaicarbonTCG"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "955320276982-vhcnh0iktlqn4v78tosr20ibqpen21ob.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBlER5_kGQLkVbWumwzbOBE8RgIZIQLFxM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "955320276982-vhcnh0iktlqn4v78tosr20ibqpen21ob.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

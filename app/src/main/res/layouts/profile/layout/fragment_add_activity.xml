@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".view.activity.AddActivityFragment">
+
+    <data>
+
+    </data>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="18dp"
+                android:layout_marginEnd="24dp"
+                android:orientation="vertical">
+
+                <androidx.appcompat.widget.AppCompatSpinner
+                    android:id="@+id/sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <com.ssoft.common.widget.CustomTextView
+                    android:layout_marginTop="12dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="รายละเอียด" />
+
+                <com.ssoft.common.widget.CustomEditText
+                    android:id="@+id/descET"
+                    android:layout_width="match_parent"
+                    android:layout_height="160dp"
+                    android:layout_marginTop="4dp"
+                    android:background="@drawable/bg_input"
+                    android:gravity="top|left"
+                    android:padding="8dp"
+                    android:textSize="14sp"
+
+                    />
+
+
+                <com.ssoft.common.widget.CustomButton
+                    android:layout_marginTop="24dp"
+                    android:layout_width="140dp"
+                    android:layout_gravity="center"
+                    android:layout_height="wrap_content"
+                    android:text="สร้างงาน"
+                    android:id="@+id/confirmAction"
+                    android:textColor="@color/white"
+                    android:background="@drawable/bg_input"
+                    android:backgroundTint="@color/primary"/>
+
+
+
+            </LinearLayout>
+
+
+        </androidx.core.widget.NestedScrollView>
+
+
+    </FrameLayout>
+</layout>

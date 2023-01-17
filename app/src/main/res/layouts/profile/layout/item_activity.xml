@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="data"
+            type="com.taitos.testpjk.model.ActivityAct" />
+    </data>
+
+    <androidx.cardview.widget.CardView
+        app:cardCornerRadius="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="2dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginStart="12dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:padding="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.ssoft.common.widget.CustomTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/type"
+                android:text='@{"ประเภทงาน : "+data.activity.title}'/>
+            <com.ssoft.common.widget.CustomTextView
+                android:layout_marginTop="4dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/desc"
+                android:text='@{"รายละเอียด : "+data.remark}'/>
+
+            <com.ssoft.common.widget.CustomTextView
+                android:layout_marginTop="4dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/status"
+                />
+
+            <com.ssoft.common.widget.CustomTextView
+                android:layout_marginTop="4dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/creator"
+                android:text='@{"สร้างโดย : "+data.create_by.name}'/>
+
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+</layout>

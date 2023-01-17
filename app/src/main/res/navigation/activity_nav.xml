@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_nav"
+    app:startDestination="@id/actFragment">
+
+    <fragment
+        android:id="@+id/actFragment"
+        android:name="com.taitos.testpjk.view.activity.ActFragment"
+        android:label="fragment_act"
+        tools:layout="@layout/fragment_act" >
+        <action
+            android:id="@+id/action_actFragment_to_activityDescFragment"
+            app:destination="@id/activityDescFragment" />
+        <action
+            android:id="@+id/action_actFragment_to_addActivityFragment"
+            app:destination="@id/addActivityFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/activityDescFragment"
+        android:name="com.taitos.testpjk.view.activityDesc.ActivityDescFragment"
+        android:label="fragment_activity_desc"
+        tools:layout="@layout/fragment_activity_desc" />
+    <fragment
+        android:id="@+id/addActivityFragment"
+        android:name="com.taitos.testpjk.view.activity.AddActivityFragment"
+        android:label="fragment_add_activity"
+        tools:layout="@layout/fragment_add_activity" />
+</navigation>

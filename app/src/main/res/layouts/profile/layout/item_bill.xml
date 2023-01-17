@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="data"
+            type="com.taitos.testpjk.model.Bill" />
+    </data>
+
+    <androidx.cardview.widget.CardView
+        app:cardCornerRadius="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="2dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginStart="12dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:padding="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.ssoft.common.widget.CustomTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/no"
+                android:layout_marginTop="4dp"
+                android:text='@{"เลขที่บิล : "+data.bill_no}'/>
+            <com.ssoft.common.widget.CustomTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/customer"
+                android:text='@{"รหัสลูกค้า : "+data.customer_id+" "+data.customer.customer_name}'
+              />
+
+            <com.ssoft.common.widget.CustomTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/balance"
+                android:text='@{"ยอดเงิน : "+String.valueOf(data.balance)}'/>
+
+            <com.ssoft.common.widget.CustomTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/creator"
+                android:text='@{"สร้างโดย : "+data.create_by.name}'/>
+            <com.ssoft.common.widget.CustomTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/date"
+                android:text='@{"วันที่บิล : "+data.bill_date}'/>
+            <com.ssoft.common.widget.CustomTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/status"/>
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+</layout>
